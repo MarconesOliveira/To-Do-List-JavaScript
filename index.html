@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Afazeres</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container_form">
+      <form class="new_activity">
+        <input type="text" id="activity" placeholder="Insira uma nova atividade" required />
+        <input type="submit" value="Adicionar Atividade" />
+      </form>
+    </div>
+    <div id="activities_list">
+      <div id="container_to_do">
+        <h1>A fazer</h1>
+        <div class="to_do"></div>
+      </div>
+      <div id="container_doing">
+        <h1>Fazendo</h1>
+        <div class="doing"></div>
+      </div>
+      <div id="container_done">
+        <h1>Feito</h1>
+        <div class="done"></div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

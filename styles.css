@@ -1,0 +1,81 @@
+*{
+  text-align: center;
+  margin: auto;
+  padding: 1vh;
+}
+html{
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+body{
+  padding: 0;
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#container_form{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#activity{
+  width: 300px;
+  margin: 10px;
+}
+input[type=submit]{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  margin: 10px;
+}
+input[type=submit]:hover{
+  transition: 0.3s;
+  background-color: indigo;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+}
+.new_activity{}
+.to_do{
+  min-width: 200px;
+  width: 30vw;
+}
+.doing{
+  min-width: 200px;
+  width: 30vw;
+}
+.done{
+  min-width: 200px;
+  width: 30vw;
+}
+#activities_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#activities_list > div{
+  border: 2px solid black;
+  margin: 10px;
+}
+#activities_list > div > div{
+  background-color: white;
+  padding: 0;
+}
+#activities_list > div > div > p{
+  font-weight: bolder;
+  font-size: 2vh;
+}
+#activities_list > div > div > p:hover{
+  transition: 0.3s;
+  background-color: black;
+  color: white;
+}
+#container_to_do{
+  background-color: crimson;
+}
+#container_doing{
+  background-color: gold;
+}
+#container_done{
+  background-color: forestgreen;
+}
