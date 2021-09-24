@@ -82,3 +82,24 @@ _done.forEach(element => {
     update_lists();
  });
 });
+
+//Search bar
+let userInput = document.querySelector("#search");
+userInput.addEventListener("keyup", (event) => {
+  console.log(event.target.value);
+  filtrarListas(event.target.value);
+});
+
+//Filtrar Cardápio
+filtrarListas = (userInput) => {
+  userInput = userInput.toUpperCase();
+  let tarefas = document.querySelectorAll("p");
+  tarefas.forEach(element => {
+    let text = element.textContent.toUpperCase();
+    if(text.indexOf(userInput) < "0"){
+      element.style = "display: none;";
+    } else {
+      element.style = "display: flex";
+    }
+  });
+}
